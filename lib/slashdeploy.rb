@@ -4,8 +4,9 @@ module SlashDeploy
   # http://rubular.com/r/W1ebnRsMEh
   GITHUB_REPO_REGEX = %r{[\w\-]+\/[\w\-]+}
 
-  autoload :Service, 'slashdeploy/service'
-  autoload :State,   'slashdeploy/state'
+  autoload :Service,   'slashdeploy/service'
+  autoload :State,     'slashdeploy/state'
+  autoload :MockSlack, 'slashdeploy/mock_slack'
 
   # Authorizer is used to check if the user has access to a repo.
   module Authorizer

@@ -40,6 +40,16 @@ In a nutshell, GitHub Deployments are a way to initialize a deployment **request
 
 The full test suite can be run with:
 
-```
+```console
 $ ./bin/rake
+```
+
+### Slash Commands
+
+It's not ideal to have to setup a Slack team, add a custom slash command, configure forwarding etc. To make life easier, you can trigger fake slash commands with a simple rake task:
+
+```console
+$ ./bin/rake slack
+> /deploy help
+I don't know who you are on GitHub yet
 ```
